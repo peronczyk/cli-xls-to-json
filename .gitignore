@@ -1,0 +1,7 @@
+# ignore those
+node_modules
+*.xlsx
+*.json
+
+# but not those
+!package.json
