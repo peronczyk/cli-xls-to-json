@@ -34,7 +34,7 @@ workbook.xlsx.readFile(options.file)
           if (jsonObj[key]) {
             console.warn(` - Duplicated key detected: ${key}`);
           } else {
-            jsonObj[key] = value.trim();
+            jsonObj[key] = (typeof value === 'string') ? value.trim() : value;
           }
         }
       }
